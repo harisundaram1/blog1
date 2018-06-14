@@ -2,11 +2,21 @@
   <div class="mt2 wrap">
     <div class="measure">
       <!-- <a href="{{ site.url }}" class="site-title">{{ site.title }}</a> -->
-      <a class="site-title" href="{{ '/' | absolute_url }}">
+                <div class="blog-logo-container">
+                  <a href="/">
+                    <img class="cdl-logo" src="/images/test.jpg" />
+                  </a>
+                </div>
+      <!-- <a class="site-title" href="{{ '/' | absolute_url }}">
         <img src="/images/test.jpg">
-      </a>
-      <nav class="site-nav">
+      </a> -->
+      <!-- <nav class="site-nav">
         {% include navigation.html %}
+      </nav> -->
+      <nav class="site-nav cdl-blog-site-nav">
+        <!-- <a href="/blog/subscribe/">Subscribe</a> -->
+        <a href="/about/">About</a>
+        <!-- <a href="/blog/archive/">Archive</a> -->
       </nav>
       <div class="clearfix"></div>
       {% if site.show_social_icons %}
@@ -15,3 +25,23 @@
     </div>
   </div>
 </header>
+
+
+    <header class="site-header px2 px-responsive">
+      <div class="mt2 wrap">
+        <div class="measure">
+          <div class="blog-logo-container">
+            <a href="/blog/">
+              <img class="cdl-logo" src="/blog/assets/cdl_Logo.png" />
+            </a>
+          </div>
+          <nav class="site-nav cdl-blog-site-nav">
+            <!-- <a href="/blog/subscribe/">Subscribe</a> -->
+            <a href="/about/">About</a>
+            <!-- <a href="/blog/archive/">Archive</a> -->
+          </nav>
+          <div class="clearfix"></div>
+    
+        </div>
+      </div>
+    </header>
