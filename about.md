@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About CDL
+# title: About CDL
 permalink: /about/
 tags: about
 ---
