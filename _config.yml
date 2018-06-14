@@ -2,7 +2,7 @@
 title:       The CDL blog
 email:       hs1@illinois.edu
 author:      Hari Sundaram
-description: "A blog to test ideas for the group blog"
+description: "The Crowd Dynamics Lab blog"
 baseurl:     ""
 url:         "https://harisundaram1.github.io"
 date_format: "%b %-d, %Y"
