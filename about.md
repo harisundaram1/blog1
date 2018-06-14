@@ -16,4 +16,4 @@ Thus much of our work focus on empirical work (what can we measure? how well?), 
 
 ## Acknowledgements
 
-We based our blog design on the [Jekyll Theme Pixyll](https://github.com/johno/pixyll) and refined the design based on the [BAIR blog](http://bair.berkeley.edu/blog/)  
+We based our blog design on the [Jekyll Theme Pixyll](https://github.com/johno/pixyll) and updated the design inspired by the clean look of the [BAIR blog.](http://bair.berkeley.edu/blog/)  
