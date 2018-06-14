@@ -6,6 +6,12 @@ $line-height: 1.5 !default;
 $heading-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, sans-serif !default;
 $heading-font-weight: 600 !default;
 $heading-line-height: 1.25 !default;
+
+// different fonts for sub-heading
+$subheading-font-family: font-family: 'Open Sans Condensed', 'Helvetica Neue', Helvetica, sans-serif !default;
+$subheading-font-weight: 300 !default;
+$subheading-line-height: 1.25 !default;
+
 $monospace-font-family: 'Source Code Pro', Consolas, monospace !default;
 // $h1: 2.998rem !default;
 $h1: 2.441em !default;
