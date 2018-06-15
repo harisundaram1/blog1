@@ -14,10 +14,7 @@ a:focus,
 a:active {
   border: 0;
   color: $link-hover-color;
-  // text-decoration: none;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #13294B; /* Safari */    
-  text-decoration-color: #13294B;
+  text-decoration: none;
   background-image: linear-gradient(to top,
     rgba(0,0,0,0) 13%,
     rgba($link-hover-color,.8) 13%,
