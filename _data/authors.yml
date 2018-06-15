@@ -3,7 +3,7 @@ hari:
     name: Hari Sundaram
     email: hs1@illinois.edu
     web: http://sundaram.cs.illinois.edu
-#  himel:
-#     name: Himel Dev
-#     email: hdev3@illinois.edu
-#     web: https://sites.google.com/site/himeldevportfolio/home
+himel:
+    name: Himel Dev
+    email: hdev@illinois.edu
+    web: https://sites.google.com/site/himeldevportfolio/home
