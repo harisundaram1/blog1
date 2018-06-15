@@ -1,0 +1,2 @@
+orange: #E84A27
+blue: #13294B
