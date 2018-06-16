@@ -2,7 +2,8 @@
 layout:     post
 title:      The First Post
 date:       2018-06-13
-authors: [hari]
+authors: 
+- hari
 summary:    Checking to see whether this post works as intended.
 categories: test jekyll pixyll
 ---
