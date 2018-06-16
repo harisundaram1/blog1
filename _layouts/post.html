@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- {% assign author = site.data.authors[page.author] %} -->
-{% assign authorCount = page.authors | size %} 
+{% assign authorCount = page.author | size %} 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
