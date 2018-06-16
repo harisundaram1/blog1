@@ -42,9 +42,17 @@
   color: #E84A27;
   opacity: 1;
 }
-.post-meta, a:hover {
+.post-meta, a:hover,
+.post-meta, a:active{
   // opacity: 0.88;
   color: #E84A27;
+  opacity: 1;
+}
+
+.post-meta, a:link,
+.post-meta, a:visited {
+  // opacity: 0.88;
+  color: #13294B;
   opacity: 1;
 }
 
