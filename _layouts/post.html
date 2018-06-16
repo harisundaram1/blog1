@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-{% assign author = site.data.authors[page.author] %}
+<!-- {% assign author = site.data.authors[page.author] %} -->
+{% assign authorCount = page.authors | size %} 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
@@ -10,8 +11,25 @@ layout: default
 <div class="post-header mb2">
   <h1>{{ page.title }}</h1>
   <span class="post-meta">
-    <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>, {{ page.date | date: site.date_format }}
+    {% if authorCount == 0 %}
+      {{ page.date | date: site.date_format }}
+    {% elsif authorCount == 1 %} 
+      {% assign oneAuthor = page.authors | first %}
+      <a href="{{ oneAuthor.web }}" target="_blank">{{ oneAuthor.name }}</a>,
+        {{ page.date | date: site.date_format }}
+      {% else %}
+        {% for author in page.authors%}
+          {% if forloop.first %}
+            <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>
+          {% elsif forloop.last %} 
+            and <a href="{{ author.web }}" target="_blank">{{ author.name }}</a>,  {{ page.date | date: site.date_format }}
+          {% else %}
+            , <a href="{{ author.web }}" target="_blank">{{ author.name }}</a
+          {% endif %}
+        {%endfor %} 
+      {% endif %}
     </span>
+
     <br>
   {% if page.update_date %}
     <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
