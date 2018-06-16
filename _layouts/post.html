@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- {% assign author = site.data.authors[page.author] %} -->
-{% assign authorCount = page.author | size %} 
+{% assign authorCount = page.authors | size %} 
 {% assign minutes = content | strip_html | number_of_words | divided_by: 180 %}
 {% if minutes == 0 %}
 {% assign minutes = 1 %}
@@ -12,7 +12,7 @@ layout: default
   <h1>{{ page.title }}</h1>
   <span class="post-meta">
     {% if authorCount == 0 %}
-      {{ page.date | date: site.date_format }}
+      {{authorCount}}, {{ page.date | date: site.date_format }}
     {% elsif authorCount == 1 %} 
       {% assign oneAuthor = page.authors | first %}
       <a href="{{ oneAuthor.web }}" target="_blank">{{ oneAuthor.name }}</a>,
