@@ -32,3 +32,12 @@ body {
      -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
+
+.image-wrapper {
+    text-align: left;
+
+    .image-caption {
+        color: $mid-gray;
+        margin-top: 1em;
+    }
+}
