@@ -9,7 +9,9 @@
         <img src="{{ site.url }}/{{ include.img }}" alt="{{ include.title }}" /> {% if include.url %}
     </a>
     {% endif %} {% if include.caption %}
-    <p class="image-caption">{{ include.caption | markdownify }}</p>
+    <div class="image-caption">
+        {{ include.caption | markdownify }}
+    </div>
     {% endif %}
 </div>
 

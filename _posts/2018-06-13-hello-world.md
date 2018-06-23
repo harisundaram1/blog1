@@ -13,4 +13,4 @@ A first post to see the utility of jekyll for creating blog posts for the group.
 {% include image.html
             img="images/logo.jpeg"
             title="CDL Logo"
-            caption="**Figure:** CDL logo; $$x \neq y$$? Markdown syntax and math in the caption—yay!" %}
+            caption="**Figure:** CDL logo; $$x \neq y$$? Markdown syntax and math in the caption—yay! this is a test to see where the caption is aligned; to the image, or if it is centered to the web page" %}
